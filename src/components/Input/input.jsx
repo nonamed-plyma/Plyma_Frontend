@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 import React from "react";
 import styled from "styled-components";
 
@@ -17,6 +22,7 @@ const StyledInput = styled.input`
   outline: none;
 `;
 
+<<<<<<< Updated upstream
 const Input = ({
   width,
   height,
@@ -40,3 +46,11 @@ const Input = ({
 };
 
 export default Input;
+=======
+const Input = (props) => {
+  return <StyledInput {...props} />;
+};
+
+export default Input;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
