@@ -1,5 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 import { color } from "../../styles/theme";
 
 const StyledButton = styled.button`
@@ -14,6 +19,7 @@ const StyledButton = styled.button`
   color: white;
 `;
 
+<<<<<<< Updated upstream
 const Button = ({
   width,
   height,
@@ -36,3 +42,11 @@ const Button = ({
 };
 
 export default Button;
+=======
+const Button = (props) => {
+  return <StyledButton {...props} />;
+};
+
+export default Button;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
