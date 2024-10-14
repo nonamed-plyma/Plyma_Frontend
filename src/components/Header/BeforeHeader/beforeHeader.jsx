@@ -15,7 +15,7 @@ const AfterHeader = () => {
     </>
   );
 };
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   width: 100%;
   height: 42px;
   display: flex;
@@ -38,12 +38,13 @@ export const LogoTitle = styled.span`
   color: ${color.Blue[4]};
   margin: 1.5px 0px;
 `;
-export const HeaderLink = styled.a`
+export const HeaderLink = styled.button`
   font-size: 17px;
   font-weight: 500;
   color: ${color.Black};
-  text-decoration: none;
   margin-right: 200px;
+  border: none;
+  background-color: ${color.White};
 `;
 
 export default AfterHeader;
