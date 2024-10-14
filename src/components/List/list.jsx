@@ -1,9 +1,25 @@
 import styled from "styled-components";
+<<<<<<< Updated upstream
 import HeartImg from "../../assets/img/list_heart_img(하트).png";
 import ChatImg from "../../assets/img/list_chat_img(댓글).png";
 import SettingImg from "../../assets/img/list_setting_img(설정).png";
 import { color } from "../../styles/theme";
 import ProfileImg from "../../assets/img/list_profile_img(프로필).png";
+=======
+<<<<<<< Updated upstream
+import Heart from "../../assets/img/list_heart_img(하트).png";
+import Chat from "../../assets/img/list_chat_img(댓글).png";
+import Setting from "../../assets/img/list_setting_img(설정).png";
+import { color } from "../../styles/theme";
+import Profile from "../../assets/img/list_profile_img(프로필).png";
+=======
+import HeartImg from "../../assets/img/listHeartImg(하트).png";
+import ChatImg from "../../assets/img/listChatImg(댓글).png";
+import SettingImg from "../../assets/img/listSettingImg(설정).png";
+import { color } from "../../styles/theme";
+import ProfileImg from "../../assets/img/listProfileImg(프로필).png";
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
 const List = () => {
   return (
