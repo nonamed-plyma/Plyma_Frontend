@@ -39,7 +39,7 @@ export const LogoTitle = styled.span`
 export const HeaderLink = styled.a`
   font-size: 17px;
   font-weight: 500;
-  color: #000000;
+  color: ${color.Black};
   text-decoration: none;
   margin-right: 200px;
 `;
