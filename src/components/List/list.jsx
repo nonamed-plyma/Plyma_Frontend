@@ -1,27 +1,27 @@
 import styled from "styled-components";
-import Heart from "../../assets/img/list_heart_img(하트).png";
-import Chat from "../../assets/img/list_chat_img(댓글).png";
-import Setting from "../../assets/img/list_setting_img(설정).png";
 import { color } from "../../styles/theme";
-import Profile from "../../assets/img/list_profile_img(프로필).png";
+import HeartImg from "../../assets/img/listHeartImg(하트).png";
+import ChatImg from "../../assets/img/listChatImg(댓글).png";
+import SettingImg from "../../assets/img/listSettingImg(설정).png";
+import ProfileImg from "../../assets/img/listProfileImg(프로필).png";
 
 const List = () => {
   return (
     <>
       <Div>
         <Front>
-          <Profiles src={Profile} alt="프로필" />
+          <Profiles src={ProfileImg} alt="프로필" />
           <BigTitle>제목 들어가요</BigTitle>
           <SmallTitle>2024-08-19</SmallTitle>
         </Front>
         <Back>
           <Special>
-            <Hearts src={Heart} alt="좋아요" />
+            <Hearts src={HeartImg} alt="좋아요" />
             <HeartsTitle>5</HeartsTitle>
-            <Chats src={Chat} alt="댓글" />
+            <Chats src={ChatImg} alt="댓글" />
             <ChatsTitle>5</ChatsTitle>
           </Special>
-          <Settings src={Setting} alt="설정" />
+          <Settings src={SettingImg} alt="설정" />
         </Back>
       </Div>
     </>
