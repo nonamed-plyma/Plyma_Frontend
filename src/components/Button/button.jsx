@@ -5,13 +5,9 @@ import { color } from "../../styles/theme";
 const StyledButton = styled.button`
   width: ${(props) => props.width || "476px"};
   height: ${(props) => props.height || "60px"};
-<<<<<<< Updated upstream
   border-radius: ${(props) => props.borderRadius || "8px"};
   margin: ${(props) => props.margin || "0"};
-  background-color: ${(props) => props.backgroundColor || "#008DEC"};
-  background-image: ${(props) => props.backgroundImage || "none"};
-  padding: 8px;
-  border: none;
+  background-color: ${(props) => props.backgroundColor || color.Blue[2]};
   color: white;
 `;
 
