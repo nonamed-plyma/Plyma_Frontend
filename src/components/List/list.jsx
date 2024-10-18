@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Heart from "../../assets/img/listHeartImg(하트).png";
+import Heart from "";
 import Chat from "../../assets/img/listChatImg(댓글).png";
 import Setting from "../../assets/img/listSettingImg(설정).png";
 import { color } from "../../styles/theme";
@@ -92,5 +92,4 @@ export const Settings = styled.img`
   width: 30px;
   height: 30px;
 `;
-
 export default List;
