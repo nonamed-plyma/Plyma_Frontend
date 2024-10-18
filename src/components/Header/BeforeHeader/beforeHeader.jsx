@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "../../../assets/img/logo.png";
+import LogoImg from "../../../assets/img/logo.png";
 import { color } from "../../../styles/theme";
 
 const AfterHeader = () => {
@@ -7,7 +7,7 @@ const AfterHeader = () => {
     <>
       <HeaderContainer>
         <Logos>
-          <LogoImg src={Logo} alt="header-logo" />
+          <Logo src={LogoImg} alt="header-logo" />
           <LogoTitle>PLYMA</LogoTitle>
         </Logos>
         <HeaderLink>로그인</HeaderLink>
@@ -15,9 +15,9 @@ const AfterHeader = () => {
     </>
   );
 };
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   width: 100%;
-  height: 56px;
+  height: 42px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,7 @@ export const Logos = styled.div`
   align-items: center;
   margin-left: 200px;
 `;
-export const LogoImg = styled.img`
+export const Logo = styled.img`
   width: 28px;
   height: 22px;
   margin-right: 11px;
@@ -38,12 +38,13 @@ export const LogoTitle = styled.span`
   color: ${color.Blue[4]};
   margin: 1.5px 0px;
 `;
-export const HeaderLink = styled.a`
-  font-size: 20px;
+export const HeaderLink = styled.button`
+  font-size: 17px;
   font-weight: 500;
-  color: #000000;
-  text-decoration: none;
+  color: ${color.Black};
   margin-right: 200px;
+  border: none;
+  background-color: ${color.White};
 `;
 
 export default AfterHeader;
