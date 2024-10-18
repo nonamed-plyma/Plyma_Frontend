@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Heart from "";
+import Heart from "../../assets/img/listHeartImg(하트).png";
 import Chat from "../../assets/img/listChatImg(댓글).png";
 import Setting from "../../assets/img/listSettingImg(설정).png";
 import { color } from "../../styles/theme";
