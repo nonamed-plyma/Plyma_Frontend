@@ -7,7 +7,6 @@ const StyledInput = styled.input`
   border-radius: ${(props) => props.borderRadius || "8px"};
   border: 1px solid;
   border-color: ${(props) => props.borderColor || "rgba(255, 0, 0, .52)"};
-  outline: none;
   background-image: ${(props) => props.backgroundImage || "none"};
   background-repeat: no-repeat;
   background-size: 30px 25px, 24px 24px;
@@ -15,6 +14,7 @@ const StyledInput = styled.input`
   margin: ${(props) => props.margin || "0"};
   padding: 8px 60px;
   font-size: 16px;
+  outline: none;
 `;
 
 const Input = (props) => {
