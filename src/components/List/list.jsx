@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Heart from "../../assets/img/list_heart_img(하트).png";
-import Chat from "../../assets/img/list_chat_img(댓글).png";
-import Setting from "../../assets/img/list_setting_img(설정).png";
+import Heart from "../../assets/img/listHeartImg(하트).png";
+import Chat from "../../assets/img/listChatImg(댓글).png";
+import Setting from "../../assets/img/listSettingImg(설정).png";
 import { color } from "../../styles/theme";
-import Profile from "../../assets/img/list_profile_img(프로필).png";
+import Profile from "../../assets/img/listProfileImg(프로필).png";
 
 const List = () => {
   return (
@@ -92,3 +92,8 @@ export const Settings = styled.img`
   width: 30px;
   height: 30px;
 `;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 게시글목록(List)컴포넌트생성
+export default List;
