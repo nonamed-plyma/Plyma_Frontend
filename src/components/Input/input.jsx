@@ -17,26 +17,8 @@ const StyledInput = styled.input`
   outline: none;
 `;
 
-const Input = ({
-  width,
-  height,
-  borderRadius,
-  placeholder,
-  placeholderColor,
-  backgroundImage,
-  ...rest
-}) => {
-  return (
-    <StyledInput
-      width={width}
-      height={height}
-      borderRadius={borderRadius}
-      placeholder={placeholder}
-      placeholderColor={placeholderColor}
-      backgroundImage={backgroundImage}
-      {...rest}
-    />
-  );
+const Input = (props) => {
+  return <StyledInput {...props} />;
 };
 
 export default Input;
