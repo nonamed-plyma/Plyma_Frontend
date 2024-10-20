@@ -85,7 +85,6 @@ function StudentLogin() {
     <>
       <BeforeMainPage />
       <Layer />
-      {/* 그 위에 로그인 레이어 추가 */}
       <ModalDiv>
         <XS src={xS}></XS>
         <Logo src={LogoImg}></Logo>
