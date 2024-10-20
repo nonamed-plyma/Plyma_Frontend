@@ -13,8 +13,8 @@ export const Layer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 어두운 배경 및 투명도 */
-  z-index: 1; /* 배경 위에 위치 */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 `;
 
 export const ModalDiv = styled(Div)`
@@ -31,13 +31,13 @@ export const ModalDiv = styled(Div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* 중앙 정렬 */
+  justify-content: flex-start;
 `;
 
 export const Logo = styled.img`
   width: 60px;
   height: 45px;
-  margin-top: 5px; /* ModalDiv 기준으로 44px 아래 */
+  margin-top: 5px;
 `;
 
 export const IdInput = styled(Input)`
@@ -47,7 +47,7 @@ export const IdInput = styled(Input)`
 `;
 
 export const PasswordInput = styled(Input)`
-  margin-top: 40px; /* IdInput 기준으로 48px 아래 */
+  margin-top: 40px;
   width: 350px;
   height: 45px;
 `;
@@ -73,7 +73,7 @@ export const Link = styled.a`
 export const Title = styled.p`
   font-size: 33px;
   font-weight: 500;
-  margin-left: -340px; /* Title을 왼쪽으로 200px 이동 */
+  margin-left: -340px;
   margin-top: 35px;
 `;
 export const XS = styled.img`
