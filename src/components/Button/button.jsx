@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Input컴포넌트생성
 import React from "react";
+=======
+>>>>>>> 버튼컴포넌트생성
 import styled from "styled-components";
 import { color } from "../../styles/theme";
 
@@ -12,33 +15,20 @@ const StyledButton = styled.button`
   height: ${(props) => props.height || "60px"};
   border-radius: ${(props) => props.borderRadius || "8px"};
   margin: ${(props) => props.margin || "0"};
+<<<<<<< HEAD
   background-color: ${(props) => props.backgroundColor || "#008DEC"};
 <<<<<<< HEAD
   background-image: ${(props) => props.backgroundImage || "none"};
   padding: 8px;
   border: none;
+=======
+  background-color: ${(props) => props.backgroundColor || `${color.Blue[2]}`};
+>>>>>>> 버튼컴포넌트생성
   color: white;
 `;
 
-const Button = ({
-  width,
-  height,
-  borderRadius,
-  backgroundColor,
-  children,
-  ...rest
-}) => {
-  return (
-    <StyledButton
-      width={width}
-      height={height}
-      borderRadius={borderRadius}
-      backgroundColor={backgroundColor}
-      {...rest}
-    >
-      {children}
-    </StyledButton>
-  );
+const Button = (props) => {
+  return <StyledButton {...props} />;
 };
 
 export default Button;
