@@ -80,7 +80,7 @@ export const XS = styled.img`
   margin-left: 500px;
 `;
 
-function StudentSignin() {
+function CorrectSignin() {
   return (
     <>
       <BeforeMainPage />
@@ -89,9 +89,9 @@ function StudentSignin() {
         <XS src={xS}></XS>
         <Logo src={LogoImg}></Logo>
         <Title>회원가입</Title>
-        <IdInput placeholder="이름을 입력해주세요(1~4자)" />
+        <IdInput placeholder="아이디를 입력해주세요(4~10자)" />
         <PasswordInput
-          placeholder="학번을 입력하주세요(4글자)"
+          placeholder="비밀번호를 입력해주세요(8~16자)"
           type="password"
         />
         <LoginButton>회원가입</LoginButton>
@@ -103,4 +103,4 @@ function StudentSignin() {
   );
 }
 
-export default StudentSignin;
+export default CorrectSignin;
