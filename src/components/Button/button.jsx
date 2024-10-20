@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< HEAD
@@ -17,6 +18,8 @@ import React from "react";
 =======
 import React from "react";
 >>>>>>> Stashed changes
+=======
+>>>>>>> 헤더컴포넌트-생성
 import styled from "styled-components";
 import { color } from "../../styles/theme";
 
@@ -43,6 +46,7 @@ const Button = (props) => {
   return <StyledButton {...props} />;
 };
 
+<<<<<<< HEAD
 export default Button;
 >>>>>>> 게시글목록(List)컴포넌트생성
 =======
@@ -61,3 +65,6 @@ const Button = (props) => {
 
 export default Button;
 >>>>>>> Input컴포넌트생성
+=======
+export default Button;
+>>>>>>> 헤더컴포넌트-생성
