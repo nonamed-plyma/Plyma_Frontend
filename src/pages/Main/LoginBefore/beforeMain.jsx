@@ -149,7 +149,6 @@ export const FloatingButton = styled(Button)`
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.6;
 `;
 
 export const BottomImg = styled.div`
