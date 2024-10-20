@@ -1,6 +1,14 @@
+<<<<<<< Updated upstream
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../../styles/theme";
+=======
+<<<<<<< HEAD
+=======
+import React from "react";
+import styled from "styled-components";
+import { color } from "../../styles/theme";
+>>>>>>> Stashed changes
 
 const StyledButton = styled.button`
   width: ${(props) => props.width || "476px"};
@@ -8,9 +16,13 @@ const StyledButton = styled.button`
   border-radius: ${(props) => props.borderRadius || "8px"};
   margin: ${(props) => props.margin || "0"};
   background-color: ${(props) => props.backgroundColor || "#008DEC"};
+<<<<<<< Updated upstream
   opacity: ${(props) => props.opacity || "1"};
   color: white;
   border: ${(props) => props.border || "none"};
+=======
+  color: white;
+>>>>>>> Stashed changes
 `;
 
 const Button = (props) => {
@@ -18,3 +30,7 @@ const Button = (props) => {
 };
 
 export default Button;
+<<<<<<< Updated upstream
+=======
+>>>>>>> Input컴포넌트생성
+>>>>>>> Stashed changes
