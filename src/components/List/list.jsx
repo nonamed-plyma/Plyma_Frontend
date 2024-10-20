@@ -92,5 +92,8 @@ export const Settings = styled.img`
   width: 30px;
   height: 30px;
 `;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 게시글목록(List)컴포넌트생성
 export default List;
