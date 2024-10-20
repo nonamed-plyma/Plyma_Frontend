@@ -13,7 +13,6 @@ import Input from "../../../components/Input/input";
 import List from "../../../components/List/list";
 import Button from "../../../components/Button/button";
 import Plus from "../../../assets/img/buttonPlusImg.png";
-
 export const Body = styled.div`
   margin: 0;
   padding: 0;
@@ -22,7 +21,6 @@ export const Body = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-
 export const Middle = styled.div`
   width: 100%;
   height: 330px;
@@ -32,50 +30,41 @@ export const Middle = styled.div`
   align-items: center;
   position: relative;
 `;
-
 export const MiddleContent = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
 `;
-
 export const MiddleBigTitle = styled.span`
   font-weight: bold;
   font-size: 33px;
 `;
-
 export const MiddleSmallTitle = styled.span`
   font-weight: 500;
   font-size: 20px;
   display: block;
   line-height: 34px;
 `;
-
 export const Titles = styled.div`
   color: ${color.White};
   position: absolute;
   top: 90px;
   left: 180px;
 `;
-
 export const LeftArrow = styled.img`
   margin-left: 60px;
 `;
-
 export const RightArrow = styled.img`
   margin-right: 60px;
 `;
-
 export const Feature1 = styled.img`
   width: 190px;
   height: 90px;
-
   position: absolute;
   top: -10px;
   right: 250px;
 `;
-
 export const Feature2 = styled.img`
   width: 190px;
   height: 90px;
@@ -83,17 +72,14 @@ export const Feature2 = styled.img`
   top: calc(35px + 60px);
   right: 350px;
 `;
-
 export const Feature3 = styled.img`
   width: 190px;
   height: 90px;
 `;
-
 export const Feature4 = styled.img`
   width: 190px;
   height: 90px;
 `;
-
 export const ImgGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -103,39 +89,33 @@ export const ImgGrid = styled.div`
   right: 50px;
   top: 25px;
 `;
-
 export const Edge = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: -30px;
-
   & > div {
     margin-bottom: 20px;
   }
 `;
-
 export const EdgeTitle = styled.span`
   font-size: 24px;
   margin-bottom: 20px;
   margin-right: 900px;
 `;
-
 export const InputContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: 64px 0;
   width: 1040px;
 `;
-
 export const FloatingButtonContainer = styled.div`
   position: relative;
   width: 100%;
   display: flex;
   justify-content: flex-end;
 `;
-
 export const FloatingButton = styled(Button)`
   position: absolute;
   right: 150px;
@@ -159,7 +139,6 @@ export const BottomImg = styled.div`
   left: 100px;
   top: 200px;
 `;
-
 function BeforeMainPage() {
   return (
     <Body>
@@ -210,5 +189,4 @@ function BeforeMainPage() {
     </Body>
   );
 }
-
 export default BeforeMainPage;
