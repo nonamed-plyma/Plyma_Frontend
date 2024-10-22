@@ -87,8 +87,13 @@ export const Row = styled.div`
 export const LogOutButton = styled(Button)`
   width: 91px;
   height: 49px;
-  border: 1px solid ${color.Blue[0]};
+  border: none;
+  background-color: ${color.Blue[0]};
+
   margin-top: 15px;
+  &:hover {
+    background-color: ${color.Blue[2]};
+  }
 `;
 
 export const Main = styled.div`
