@@ -2,7 +2,7 @@ import styled from "styled-components";
 import ListWatch from "../../Lists/ListWatch/listWatch";
 import Div from "../../../components/Div/div";
 import List from "../../../components/List/list";
-import WaringSign from "../../../assets/img/warningSign.png/";
+import WaringSign from "../../../assets/img/warningSign.png";
 import Button from "../../../components/Button/button";
 import { color } from "../../../styles/theme";
 
