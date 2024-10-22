@@ -69,6 +69,10 @@ export const WarningButton = styled(Button)`
   margin-top: 30px;
   width: 238px;
   height: 46px;
+  &:hover {
+    color: ${color.White};
+    background-color: ${color.Red};
+  }
 `;
 
 function DeleteTeacherMy() {

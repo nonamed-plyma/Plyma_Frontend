@@ -68,6 +68,10 @@ export const WarningButton = styled(Button)`
   margin-top: 30px;
   width: 238px;
   height: 46px;
+  &:hover {
+    background-color: ${color.Red};
+    color: ${color.White};
+  }
 `;
 
 function DeleteOnList() {
