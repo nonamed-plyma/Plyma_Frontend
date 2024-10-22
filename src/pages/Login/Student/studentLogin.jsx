@@ -6,6 +6,7 @@ import Div from "../../../components/Div/div";
 import Button from "../../../components/Button/button";
 import LogoImg from "../../../assets/img/logo.png";
 import xS from "../../../assets/svg/xImg(엑스표시).svg";
+import EyeOff from "../../../assets/img/inputEyeOffImg(눈꺼짐).png";
 
 export const Layer = styled.div`
   position: fixed;
@@ -50,6 +51,8 @@ export const PasswordInput = styled(Input)`
   margin-top: 40px;
   width: 350px;
   height: 45px;
+  background-size: 22px 22px;
+  background-position-x: 420px;
 `;
 
 export const LoginButton = styled(Button)`
@@ -87,12 +90,13 @@ function StudentLogin() {
       <Layer />
       <ModalDiv>
         <XS src={xS}></XS>
-        <Logo src={LogoImg}></Logo>
+        <Logo src={LogoImg} />
         <Title>로그인</Title>
         <IdInput placeholder="아이디를 입력해주세요(4~10자)" />
         <PasswordInput
           placeholder="비밀번호를 입력해주세요(8~16자)"
           type="password"
+          backgroundImage={`url(${EyeOff})`}
         />
         <LoginButton>로그인</LoginButton>
         <NoAccount>
