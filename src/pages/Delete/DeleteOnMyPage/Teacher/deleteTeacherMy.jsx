@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import ListWatch from "../../Lists/ListWatch/listWatch";
-import Div from "../../../components/Div/div";
-import List from "../../../components/List/list";
-import WaringSign from "../../../assets/img/warningSign.png";
-import Button from "../../../components/Button/button";
-import { color } from "../../../styles/theme";
+import MyPaget from "../../../MyPage/Teacher/OnWritet/onWritet";
+
+import Div from "../../../../components/Div/div";
+import List from "../../../../components/List/list";
+import WaringSign from "../../../../assets/img/warningSign.png";
+import Button from "../../../../components/Button/button";
+import { color } from "../../../../styles/theme";
 
 export const Layer = styled.div`
   position: fixed;
@@ -70,10 +71,10 @@ export const WarningButton = styled(Button)`
   height: 46px;
 `;
 
-function DeleteOnList() {
+function DeleteTeacherMy() {
   return (
     <>
-      <ListWatch />
+      <MyPaget />
       <Layer />
       <ModalDiv>
         <WarningComment>정말 이 게시물을 삭제하시겠습니까?</WarningComment>
@@ -88,5 +89,4 @@ function DeleteOnList() {
     </>
   );
 }
-
-export default DeleteOnList;
+export default DeleteTeacherMy;
