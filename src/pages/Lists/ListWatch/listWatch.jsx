@@ -90,6 +90,10 @@ export const ChatButton = styled(Button)`
   background-color: ${color.White};
   color: ${color.Black};
   border: 1px solid ${color.Gray[2]};
+  &:hover {
+    border: 1px solid ${color.Blue[2]};
+    color: ${color.Blue[2]};
+  }
 `;
 
 export const GoodNumber = styled.span`

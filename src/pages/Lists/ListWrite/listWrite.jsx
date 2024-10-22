@@ -40,6 +40,11 @@ export const FileLabel = styled.label`
   border: 1px solid ${color.Gray[3]};
   margin-left: 995px;
   margin-top: -1px;
+  &:hover {
+    background-color: ${color.Blue[1]};
+    border: 1px solid ${color.Blue[1]};
+    color: ${color.White};
+  }
 `;
 
 export const UploadButton = styled(Button)`
@@ -67,7 +72,7 @@ function ListWrite() {
 
         <FileLabel>
           <HiddenFileInput type="file" />
-          파일 추가
+          사진 추가
         </FileLabel>
 
         <ContentInput placeholder="내용을 입력하세요"></ContentInput>
