@@ -3,7 +3,7 @@ import "./App.css";
 import BeforeMainPage from "./pages/Main/LoginBefore/beforeMain";
 import AfterMainPage from "./pages/Main/LoginAfter/afterMain";
 import StudentSignin from "./pages/Signin/Student/studentSignin";
-import CorrectSignin from "./pages/Signin/Student/CorrectSignin";
+import CorrectSignin from "./pages/Signin/Student/correctSignin";
 
 function App() {
   return (
