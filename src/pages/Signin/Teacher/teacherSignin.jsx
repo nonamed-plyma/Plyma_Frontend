@@ -7,6 +7,7 @@ import Button from "../../../components/Button/button";
 import LogoImg from "../../../assets/img/logo.png";
 import xS from "../../../assets/svg/xImg(엑스표시).svg";
 import EyeOff from "../../../assets/img/inputEyeOffImg(눈꺼짐).png";
+import { breakpoints } from "../../../styles/device";
 
 export const Layer = styled.div`
   position: fixed;
@@ -33,18 +34,43 @@ export const ModalDiv = styled(Div)`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 500px;
+    height: 550px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    width: 300px;
+    height: 350px;
+  }
 `;
 
 export const Logo = styled.img`
   width: 60px;
   height: 45px;
   margin-top: 5px;
+
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    width: 50px;
+    height: 35px;
+    margin-top: -30px;
+  }
 `;
 
 export const IdInput = styled(Input)`
   margin-top: 30px;
   width: 350px;
   height: 45px;
+
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 300px;
+    height: 40px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    width: 180px;
+    height: 20px;
+    margin-bottom: 5px;
+  }
 `;
 
 export const PasswordInput = styled(Input)`
@@ -53,24 +79,62 @@ export const PasswordInput = styled(Input)`
   height: 45px;
   background-size: 22px 22px;
   background-position-x: 420px;
+
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 300px;
+    height: 40px;
+    background-position: 370px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    width: 180px;
+    height: 20px;
+    background-position-x: 350px;
+    background-size: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
 `;
 
 export const LoginButton = styled(Button)`
   margin-top: 40px;
   border: none;
   font-size: 17px;
+
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 420px;
+    height: 55px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    width: 300px;
+    height: 40px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const NoAccount = styled.p`
   font-weight: 500;
   font-size: 17px;
   margin-top: 25px;
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    margin-top: 7px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top -10spx: 
+  }
 `;
 
 export const Link = styled.a`
   color: ${color.Blue[2]};
   font-weight: 600;
   font-size: 17px;
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Title = styled.p`
@@ -78,14 +142,48 @@ export const Title = styled.p`
   font-weight: 500;
   margin-left: -340px;
   margin-top: 15px;
+
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    margin-left: -300px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    margin-top: 9px;
+    font-size: 25px;
+    margin-left: -200px;
+  }
 `;
+
 export const XS = styled.img`
   margin-left: 500px;
+
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    margin-right: 40px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    margin-right: 220px;
+    margin-bottom: 0px;
+    margin-top: -2px;
+  }
 `;
+
 export const NameInput = styled(Input)`
   margin-top: -5px;
   width: 350px;
   height: 45px;
+
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 300px;
+    height: 40px;
+    background-position: 370px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    width: 180px;
+    height: 20px;
+    background-position-x: 350px;
+    background-size: 20px 20px;
+    /* margin-top: 20px;
+    margin-bottom: 15px; */
+  }
 `;
 
 function TeacherSignin() {
