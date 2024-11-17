@@ -7,53 +7,80 @@ import Profile from "../../../assets/img/listProfileImg(프로필).png";
 import Input from "../../../components/Input/input";
 import Button from "../../../components/Button/button";
 import { color } from "../../../styles/theme";
+import { breakpoints } from "../../../styles/device";
 
 const Title = styled.h1`
   font-size: 50px;
   font-weight: 400;
   margin-top: 30px;
   text-align: center;
-  margin-right: 890px;
+  margin-right: calc(100% - 600px);
+  white-space: nowrap;
+  @media (max-width: ${breakpoints.desktop}) {
+    font-size: 40px;
+    margin-right: calc(100% - 550px);
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    font-size: 30px;
+    margin-right: calc(100% - 490px);
+  }
+  @media (max-width: ${breakpoints.mobileSmall}) {
+    font-size: 20px;
+    margin-right: calc(100% - 430px);
+  }
 `;
 
 export const Date = styled.span`
   font-size: 20px;
   margin-right: 20px;
   text-align: center;
+  white-space: nowrap;
+  @media (max-width: ${breakpoints.mobileSmall}) {
+    font-size: 15px;
+  }
 `;
 
 export const Good = styled.img`
   width: 24px;
   height: 24px;
   margin-right: 4px;
+  @media (max-width: ${breakpoints.mobileSmall}) {
+    width: 18px;
+    height: 18px;
+    margin-left: -10px;
+  }
 `;
 
 export const Settings = styled.img`
   width: 24px;
   height: 24px;
   margin-left: auto;
+  @media (max-width: ${breakpoints.mobileSmall}) {
+    height: 18px;
+  }
 `;
 
 export const LineDiv = styled.div`
-  width: 1200px;
+  width: calc(100% - 300px);
   height: 1px;
   background-color: ${color.Black};
-  margin: 5px 0;
+  margin: 5px 50px;
   text-align: center;
 `;
 
 export const ContentDiv = styled.div`
-  padding: 0 20px;
-  text-align: center;
-  margin-bottom: 400px;
+  width: calc(100% - 300px);
+  margin: 20px auto 400px;
+  padding: 0;
+  text-align: left;
 `;
 
 export const Content = styled.p`
   font-size: 20px;
   line-height: 1.5;
   color: ${color.Black};
-  text-align: center;
-  margin-right: 250px;
+  margin: 0;
+  text-align: left;
 `;
 
 export const Profiles = styled.img`
@@ -74,11 +101,11 @@ export const Chats = styled.div`
   align-items: center;
   justify-content: center;
   padding: -5px 10px;
-  margin-right: 1025px;
+  margin-right: calc(100% - 470px);
 `;
 
 export const ChatInput = styled(Input)`
-  width: 1000px;
+  width: 100%;
   height: 35px;
   border-color: ${color.Gray[2]};
   margin-right: 10px;
@@ -90,15 +117,26 @@ export const ChatButton = styled(Button)`
   background-color: ${color.White};
   color: ${color.Black};
   border: 1px solid ${color.Gray[2]};
+  &:hover {
+    border: 1px solid ${color.Blue[2]};
+    color: ${color.Blue[2]};
+  }
 `;
 
 export const GoodNumber = styled.span`
   font-size: 20px;
   margin-right: 20px;
+  @media (max-width: ${breakpoints.mobileSmall}) {
+    font-size: 15px;
+  }
 `;
 
 export const Chatss = styled.img`
   margin-right: 4px;
+  @media (max-width: ${breakpoints.mobileSmall}) {
+    width: 18px;
+    margin-left: -10px;
+  }
 `;
 
 export const Bars = styled.div`
@@ -110,6 +148,9 @@ export const Bars = styled.div`
 
 export const ChatNumber = styled.span`
   font-size: 20px;
+  @media (max-width: ${breakpoints.mobileSmall}) {
+    font-size: 15px;
+  }
 `;
 
 export const Container = styled.div`
@@ -124,9 +165,11 @@ export const Container = styled.div`
 export const ActionRow = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 5px 0;
+  justify-content: space-between;
+  width: calc(100% - 300px);
+  margin-left: 10px;
 `;
+
 export const FirstRow = styled.div`
   display: flex;
   align-items: center;
@@ -136,13 +179,14 @@ export const FirstRow = styled.div`
 export const SecondRow = styled.div`
   display: flex;
   align-items: center;
-  margin-right: 950px;
 `;
+
 export const ChatRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0;
+  width: calc(100% - 300px);
 `;
 
 function ListWatch() {
