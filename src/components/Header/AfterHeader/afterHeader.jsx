@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import LogoImg from "../../../assets/img/logo.png";
 import { color } from "../../../styles/theme";
+import { breakpoints } from "../../../styles/device";
 
 const AfterHeader = () => {
   return (
@@ -24,6 +25,9 @@ export const Logos = styled.div`
   display: flex;
   align-items: center;
   margin-left: 200px;
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    margin-left: 100px;
+  }
 `;
 export const Logo = styled.img`
   width: 28px;
@@ -43,6 +47,11 @@ export const HeaderLink = styled.a`
   margin-right: 200px;
   border: none;
   background-color: ${color.White};
+  white-space: nowrap;
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    font-size: 15px;
+    margin-left: 100px;
+  }
 `;
 
 export default AfterHeader;
