@@ -4,6 +4,7 @@ import Chat from "../../assets/img/listChatImg(댓글).png";
 import Setting from "../../assets/img/listSettingImg(설정).png";
 import { color } from "../../styles/theme";
 import Profile from "../../assets/img/listProfileImg(프로필).png";
+import { breakpoints } from "../../styles/device";
 
 const List = () => {
   return (
@@ -29,13 +30,15 @@ const List = () => {
 };
 
 export const Div = styled.div`
-  width: 1040px;
+  width: 100%;
   height: 60px;
   border: 0.5px solid ${color.Gray[7]};
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
+  padding: 0 16px;
+  box-sizing: border-box;
 `;
 export const Profiles = styled.img`
   width: 36px;
@@ -47,6 +50,15 @@ export const BigTitle = styled.span`
   font-weight: 500;
   margin-left: 16px;
   display: inline-block;
+  white-space: nowrap;
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  @media (max-width: ${breakpoints.mobileSmall}) {
+    font-size: 14px;
+    font-weight: 500;
+  }
 `;
 export const SmallTitle = styled.span`
   margin-left: 16px;
