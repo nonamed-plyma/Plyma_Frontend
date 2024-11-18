@@ -50,6 +50,7 @@ export const BigTitle = styled.span`
   font-weight: 500;
   margin-left: 16px;
   display: inline-block;
+  white-space: nowrap;
   @media (max-width: ${breakpoints.tabletSmall}) {
     font-size: 17px;
     font-weight: 500;
