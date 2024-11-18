@@ -13,6 +13,7 @@ import Input from "../../../components/Input/input";
 import List from "../../../components/List/list";
 import Button from "../../../components/Button/button";
 import Plus from "../../../assets/img/buttonPlusImg.png";
+import { breakpoints } from "../../../styles/device";
 
 export const Body = styled.div`
   margin: 0;
@@ -43,6 +44,9 @@ export const MiddleContent = styled.div`
 export const MiddleBigTitle = styled.span`
   font-weight: bold;
   font-size: 33px;
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    font-size: 27px;
+  }
 `;
 
 export const MiddleSmallTitle = styled.span`
@@ -50,6 +54,9 @@ export const MiddleSmallTitle = styled.span`
   font-size: 20px;
   display: block;
   line-height: 34px;
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    font-size: 18px;
+  }
 `;
 
 export const Titles = styled.div`
@@ -57,23 +64,39 @@ export const Titles = styled.div`
   position: absolute;
   top: 90px;
   left: 180px;
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    top: 80px;
+    left: 90px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    top: 100px;
+  }
 `;
 
 export const LeftArrow = styled.img`
-  margin-left: 60px;
+  position: absolute;
+  left: 30px;
 `;
 
 export const RightArrow = styled.img`
-  margin-right: 60px;
+  position: absolute;
+  right: 30px;
 `;
 
 export const Feature1 = styled.img`
   width: 190px;
   height: 90px;
-
   position: absolute;
   top: -10px;
   right: 250px;
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 170px;
+    height: 90px;
+    right: 100px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    display: none;
+  }
 `;
 
 export const Feature2 = styled.img`
@@ -82,16 +105,39 @@ export const Feature2 = styled.img`
   position: absolute;
   top: calc(35px + 60px);
   right: 350px;
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 170px;
+    height: 90px;
+    right: 200px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    display: none;
+  }
 `;
 
 export const Feature3 = styled.img`
   width: 190px;
   height: 90px;
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 170px;
+    height: 90px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    display: none;
+  }
 `;
 
 export const Feature4 = styled.img`
   width: 190px;
   height: 90px;
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 170px;
+    height: 90px;
+    right: 800px;
+  }
+  @media (max-width: ${breakpoints.mobileLarge}) {
+    display: none;
+  }
 `;
 
 export const ImgGrid = styled.div`
@@ -105,41 +151,35 @@ export const ImgGrid = styled.div`
 `;
 
 export const Edge = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: -30px;
-
-  & > div {
-    margin-bottom: 20px;
-  }
+  position: relative;
 `;
 
 export const EdgeTitle = styled.span`
   font-size: 24px;
   margin-bottom: 20px;
-  margin-right: 900px;
+  width: 150px;
 `;
 
 export const InputContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  width: 100%;
   margin: 64px 0;
-  width: 1040px;
 `;
 
 export const FloatingButtonContainer = styled.div`
-  position: relative;
-  width: 100%;
+  position: absolute;
+  right: -70px;
+  bottom: 0;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
 `;
 
 export const FloatingButton = styled(Button)`
-  position: absolute;
-  right: 150px;
-  bottom: 40px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -157,6 +197,49 @@ export const BottomImg = styled.div`
   position: relative;
   left: 100px;
   top: 200px;
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    left: 200px;
+  }
+`;
+
+export const Inputs = styled(Input)`
+  width: 100%;
+  height: 60px;
+  border-radius: 40px;
+  box-sizing: border-box;
+`;
+
+export const WrapperContainer = styled.div`
+  width: 100%;
+  max-width: 1040px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    max-width: 90%;
+  }
+`;
+
+export const EdgeTitleContainer = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 90px;
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+`;
+
+export const ListContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  top: 40px;
 `;
 
 function BeforeMainPage() {
@@ -186,28 +269,30 @@ function BeforeMainPage() {
           <RightArrow src={RightArrowImg} />
         </MiddleContent>
       </Middle>
-      <InputContainer>
-        <Input
-          width="100%"
-          height="40px"
-          borderRadius="40px"
-          placeholder="키워드를 입력해주세요"
-          placeholderColor={color.Gray[1]}
-          borderColor={color.Gray[1]}
-          backgroundImage={`url(${LogoImg}), url(${MagnifyImg})`}
-        />
-      </InputContainer>
-      <Edge>
-        <EdgeTitle>게시글 목록</EdgeTitle>
-        <List />
-        <List />
-        <List />
-      </Edge>
-      <FloatingButtonContainer>
-        <FloatingButton />
-      </FloatingButtonContainer>
+      <WrapperContainer>
+        <InputContainer>
+          <Inputs
+            placeholder="키워드를 입력해주세요"
+            placeholderColor={color.Gray[1]}
+            borderColor={color.Gray[1]}
+            backgroundImage={`url(${LogoImg}), url(${MagnifyImg})`}
+          />
+        </InputContainer>
+        <Edge>
+          <EdgeTitleContainer>
+            <EdgeTitle>게시글 목록</EdgeTitle>
+          </EdgeTitleContainer>
+          <ListContainer>
+            <List />
+            <List />
+            <List />
+            <FloatingButtonContainer>
+              <FloatingButton />
+            </FloatingButtonContainer>
+          </ListContainer>
+        </Edge>
+      </WrapperContainer>
     </Body>
   );
 }
-
 export default BeforeMainPage;
