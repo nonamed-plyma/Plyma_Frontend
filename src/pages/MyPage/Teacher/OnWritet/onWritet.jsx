@@ -6,6 +6,7 @@ import List from "../../../../components/List/list";
 import YesDot from "../../../../assets/img/yesDot.png";
 import NoDot from "../../../../assets/img/noDot.png";
 import { color } from "../../../../styles/theme";
+import { breakpoints } from "../../../../styles/device";
 
 export const Name = styled.span`
   font-size: 32px;
@@ -63,6 +64,11 @@ export const ProfileDiv = styled(Div)`
   height: 176px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid ${color.Gray[5]};
+  @media (max-width: ${breakpoints.tabletSmall}) {
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+  }
 `;
 
 export const LineDiv = styled(Div)`
@@ -82,13 +88,21 @@ export const Row = styled.div`
   max-width: 200px;
   margin-bottom: 10px;
   margin-left: 100px;
+  @media (max-width: ${breakpoints.mobileSmall}) {
+    margin-right: 30px;
+  }
 `;
 
 export const LogOutButton = styled(Button)`
   width: 91px;
   height: 49px;
-  border: 1px solid ${color.Blue[0]};
+  border: none;
+  background-color: ${color.Blue[0]};
+
   margin-top: 15px;
+  &:hover {
+    background-color: ${color.Blue[2]};
+  }
 `;
 
 export const Main = styled.div`
@@ -114,6 +128,7 @@ export const Edge = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 120px;
+
   & > div {
     margin-bottom: 20px;
   }
