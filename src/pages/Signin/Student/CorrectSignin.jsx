@@ -57,6 +57,7 @@ export const IdInput = styled(Input)`
   margin-top: -10px;
   width: 350px;
   height: 40px;
+  padding-right: 10px;
   @media (max-width: ${breakpoints.tabletSmall}) {
     width: 300px;
     height: 40px;
@@ -154,7 +155,7 @@ export const XS = styled.img`
   }
 `;
 
-function StudentSignin() {
+function CorrectSignin() {
   return (
     <>
       <BeforeMainPage />
@@ -163,9 +164,9 @@ function StudentSignin() {
         <XS src={xS}></XS>
         <Logo src={LogoImg} />
         <Title>로그인</Title>
-        <IdInput placeholder="이름을 입력해주세요(1~4자)" />
+        <IdInput placeholder="아이디를 입력해주세요(4~10자)" />
         <PasswordInput
-          placeholder="학번을 입력하주세요(4글자)"
+          placeholder="비밀번호를 입력해주세요(8~16자)"
           type="password"
           backgroundImage={`url(${EyeOff})`}
         />
@@ -178,4 +179,4 @@ function StudentSignin() {
   );
 }
 
-export default StudentSignin;
+export default CorrectSignin;
