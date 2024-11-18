@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import ListWatch from "../../Lists/ListWatch/listWatch";
-import Div from "../../../components/Div/div";
-import WaringSign from "../../../assets/img/warningSign.png";
-import Button from "../../../components/Button/button";
-import { color } from "../../../styles/theme";
-import { breakpoints } from "../../../styles/device";
+import MyPaget from "../../../MyPage/Teacher/OnWritet/onWritet";
+import Div from "../../../../components/Div/div";
+/* import List from "../../../../components/List/list"; */
+import WaringSign from "../../../../assets/img/warningSign.png";
+import Button from "../../../../components/Button/button";
+import { color } from "../../../../styles/theme";
+import { breakpoints } from "../../../../styles/device";
 
 export const Layer = styled.div`
   position: fixed;
@@ -13,6 +14,7 @@ export const Layer = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 `;
 
 export const ModalDiv = styled(Div)`
@@ -20,6 +22,7 @@ export const ModalDiv = styled(Div)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
   background-color: ${color.White};
   padding: 20px;
   border-radius: 10px;
@@ -59,7 +62,6 @@ export const WarningComment = styled.p`
 
 export const WarningImg = styled.img`
   margin-right: 5px;
-  width: 20px;
 `;
 
 export const WarningContent = styled.div`
@@ -103,18 +105,18 @@ export const WarningButton = styled(Button)`
   width: 238px;
   height: 46px;
   &:hover {
-    background-color: ${color.Red};
     color: ${color.White};
+    background-color: ${color.Red};
   }
   @media (max-width: ${breakpoints.mobileSmall}) {
     margin-top: 10px;
   }
 `;
 
-function DeleteOnList() {
+function DeleteTeacherMy() {
   return (
     <>
-      <ListWatch />
+      <MyPaget />
       <Layer />
       <ModalDiv>
         <WarningComment>정말 이 게시물을 삭제하시겠습니까?</WarningComment>
@@ -129,5 +131,4 @@ function DeleteOnList() {
     </>
   );
 }
-
-export default DeleteOnList;
+export default DeleteTeacherMy;
